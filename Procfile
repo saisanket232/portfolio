@@ -1,1 +1,1 @@
-web: gunicorn portfolio_project.wsgi --chdir portfolio_project --log-file -
+web: gunicorn portfolio_project.wsgi:application --chdir portfolio_project
