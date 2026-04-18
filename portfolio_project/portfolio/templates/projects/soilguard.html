@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    
+
+    <div class="card hover-card" style="margin-top:20px;">
+        <h2>SoilGuard</h2>
+
+        <p>
+        SoilGuard is an IoT + Machine Learning based smart irrigation system.
+        It predicts soil moisture using LSTM and optimizes water usage.
+        </p>
+<br>
+        <h3>Features</h3>
+        <ul style="text-align: left; list-style-type: none;">
+            <li>Real-time sensor monitoring</li>
+            <li>LSTM prediction model</li>
+            <li>Blynk cloud integration</li>
+            <li>Automated irrigation system</li>
+        </ul>
+<br>
+        <h3>Tech Stack</h3>
+        <p>Python, TensorFlow, LSTM, ESP8266, SQL</p>
+
+    </div>
+<a href="{% url 'projects' %}" class="btn">← Back</a>
+</div>
+
+{% endblock %}

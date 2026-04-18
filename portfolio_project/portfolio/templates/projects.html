@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+
+    <a href="{% url 'soilguard' %}" class="card project-card hover-card">
+        <h3>SoilGuard (IoT + ML)</h3>
+        <p>Smart irrigation system using LSTM and IoT sensors.</p>
+    </a>
+
+    <a href="{% url 'finance' %}" class="card project-card hover-card">
+        <h3>Personal Finance Tracker</h3>
+        <p>Full-stack budget management system with dashboards.</p>
+    </a>
+
+</div>
+
+{% endblock %}

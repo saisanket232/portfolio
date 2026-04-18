@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    
+
+    <div class="card hover-card" style="margin-top:20px;">
+        <h2> Personal Finance Tracker</h2>
+
+        <p>
+        A full-stack web application to manage expenses and track budgets.
+        </p>
+<br>
+        <h3>Features</h3>
+        <ul style="text-align: left; list-style-type: none;">
+            <li>User authentication</li>
+            <li>Add / edit / delete expenses</li>
+            <li>Dashboard overview</li>
+            <li>Responsive UI</li>
+        </ul>
+<br>
+        <h3>Tech Stack</h3>
+        <p>Django, HTML, CSS, SQLite</p>
+
+    </div>
+
+    <a href="{% url 'projects' %}" class="btn">← Back</a>
+</div>
+
+{% endblock %}

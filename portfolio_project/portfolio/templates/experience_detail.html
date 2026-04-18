@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    
+
+    <div class="card hover-card" style="margin-top:20px;margin-bottom: 20px;">
+        <h2>Python Full Stack Intern</h2>
+        <p style="margin-top: 20px;margin-bottom: 20px;"><strong>Company:</strong> Parvam Software Solutions</p>
+
+        <h3>Backend (Django)</h3>
+        <ul style="text-align: left; list-style-type: none;margin-bottom: 10px;">
+            <li>Built REST APIs using Django</li>
+            <li>Handled database operations (SQLite/MySQL)</li>
+            <li>Implemented CRUD functionality</li>
+        </ul>
+        <br>
+        <h3>Frontend</h3>
+        <ul style="text-align: left; list-style-type: none;margin-bottom: 10px;">
+            <li>Developed UI using HTML, CSS, JavaScript</li>
+            <li>Integrated templates with Django backend</li>
+            <li>Handled form submissions and validation</li>
+        </ul>
+        <br>
+        <h3>Other Skills</h3>
+        <ul style="text-align: left; list-style-type: none;margin-bottom: 10px;">
+            <li>API integration</li>
+            <li>Debugging and optimization</li>
+            <li>Version control using Git</li>
+        </ul>
+
+    </div>
+<a href="{% url 'experience' %}" class="btn">← Back</a>
+</div>
+
+{% endblock %}
