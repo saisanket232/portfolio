@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.core.mail import send_mail
+from django.conf import settings
 from .models import ContactMessage
 
 def home(request):
@@ -27,11 +29,37 @@ def testimonials(request):
 
 def contact(request):
     if request.method == "POST":
+        name = request.POST.get("name")
+        email = request.POST.get("email")
+        message = request.POST.get("message")
+
+        # Save to database
         ContactMessage.objects.create(
-            name=request.POST.get("name"),
-            email=request.POST.get("email"),
-            message=request.POST.get("message")
+            name=name,
+            email=email,
+            message=message
         )
+
+        # Send email to your Gmail
+        try:
+            send_mail(
+                subject=f"New Contact Message from {name}",
+                message=f"Name: {name}\nEmail: {email}\nMessage:\n{message}",
+                from_email=settings.EMAIL_HOST_USER,
+                recipient_list=[settings.EMAIL_HOST_USER],
+                fail_silently=False,
+            )
+            
+            # Send auto-reply to user
+            send_mail(
+                subject="Thanks for contacting me",
+                message="I will get back to you soon.",
+                from_email=settings.EMAIL_HOST_USER,
+                recipient_list=[email],
+                fail_silently=False,
+            )
+        except Exception as e:
+            print(f"Email sending failed: {e}")
 
         return render(request, "contact.html", {
             "success": "Message sent successfully!"
