@@ -152,25 +152,6 @@ portfolio_project/
 - ✅ CSRF protection enabled
 - ✅ DEBUG = False in production
 
-## 🐛 Troubleshooting
-
-### Email not sending?
-1. Check terminal for error messages
-2. Verify Gmail App Password is correct
-3. Check if 2-Step Verification is enabled
-4. Look in Gmail spam folder
-
-### 500 Server Error?
-1. Check environment variables are set
-2. Run migrations: `python manage.py migrate`
-3. Check Django logs in terminal
-
-## 📞 Support
-
-For issues, check:
-- Django documentation: https://docs.djangoproject.com/
-- Gmail App Passwords: https://support.google.com/accounts/answer/185833
-
 ## 📄 License
 
 This project is open source and available for personal use.
