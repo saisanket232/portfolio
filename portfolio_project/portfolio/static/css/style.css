@@ -23,6 +23,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+    position: relative;
 }
 
 nav h2 {
@@ -231,8 +232,10 @@ button:hover {
         flex-direction: column;
         width: 100%;
         background: white;
-        margin-top: 10px;
-        padding: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 15px;
         border-radius: 8px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
