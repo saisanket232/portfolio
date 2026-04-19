@@ -52,7 +52,10 @@ nav a:hover {
 
 /* HAMBURGER */
 .menu-toggle {
-    display: none;
+    display: none;  /* Hidden by default on desktop */
+    position: absolute;
+    right: 20px;
+    top: 20px;
     font-size: 24px;
     cursor: pointer;
 }
@@ -221,10 +224,7 @@ button:hover {
     }
 
     .menu-toggle {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 20px;
+        display: block;  /* Show hamburger on mobile */
     }
 
     .nav-links {
