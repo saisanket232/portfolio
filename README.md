@@ -6,16 +6,6 @@ A full-stack portfolio website built using Django, featuring dynamic project pag
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots here:
-> - Home page with hero section
-> - Projects showcase
-> - Contact form
-> - Mobile responsive design
-
----
-
 ## ✨ Features
 
 - **Home Page** - Responsive landing section with modern UI and smooth scrolling
